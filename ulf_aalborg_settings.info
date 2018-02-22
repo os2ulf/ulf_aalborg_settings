@@ -1,0 +1,4 @@
+name = Ulf aalborg settings
+description = Holds settings specific to Aaben Aalborg
+package = Ulf base
+core = 7.x

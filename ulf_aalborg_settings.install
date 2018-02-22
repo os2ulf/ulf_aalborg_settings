@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Disable google analytics.
+ */
+function ulf_aalborg_settings_install() {
+  // Disable googleanalytics.
+  $module_disable = array(
+    'googleanalytics',
+  );
+
+  module_disable($module_disable);
+}
