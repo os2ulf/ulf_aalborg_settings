@@ -11,3 +11,15 @@ function ulf_aalborg_settings_install() {
 
   module_disable($module_disable);
 }
+
+/**
+ * Implements hook_update_N().
+ */
+function ulf_aalborg_settings_update_7001(&$sandbox)
+{
+  $module_enable = array(
+    'sharedemail',
+  );
+  module_enable($module_enable);
+  cache_clear_all();
+}
